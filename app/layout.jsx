@@ -4,7 +4,7 @@ import NavBar from '@components/NavBar';
 import Provider from '@components/Provider';
 
 export const metatdata = {
-  title: 'Promptopia',
+  title: 'Promptmania',
   description: 'Discover & Share AI Promps',
 };
 
