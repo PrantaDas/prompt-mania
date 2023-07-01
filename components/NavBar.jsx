@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
-const NabBar = () => {
+const NavBar = () => {
   const { data: session } = useSession();
   const [providers, setProviders] = useState(null);
   const [toogleDropdown, setToggleDropdown] = useState(false);
@@ -40,7 +40,7 @@ const NabBar = () => {
               >
                 Create Post
               </Link>
-              <button className="outline_btn">Sign Out</button>
+              <button className="outline_btn" onClick={signOut}>Sign Out</button>
               <Link href="/profile">
                 <Image
                   src={session?.user.image}
@@ -135,4 +135,4 @@ const NabBar = () => {
   );
 };
 
-export default NabBar;
+export default NavBar;

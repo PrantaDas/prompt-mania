@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/global.css';
-import NavBar from '@components/NabBar';
+import NavBar from '@components/NavBar';
 import Provider from '@components/Provider';
 
 export const metatdata = {
